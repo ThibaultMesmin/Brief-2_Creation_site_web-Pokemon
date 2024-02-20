@@ -1,4 +1,4 @@
-
+/* #### * #### */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +9,8 @@ body {
     padding: 1em;
 }
 
+
+/* #### Header #### */
 #header {
     display: flex;
     justify-content: space-around;
@@ -32,11 +34,8 @@ nav a {
     color: grey;
 }
 
-.presentation{
-    width: 180px;
-    height: 180px;
-    background-color: rgb(82, 88, 88);
-}
+
+/* #### HAUT #### */
 .haut{
     background-image: url(images/Pokemon-fond-ecran-wallpaper-hd-4k-7.jpg);
     background-size: cover; /* Assurez-vous que le fond s'ajuste correctement */
@@ -45,8 +44,37 @@ nav a {
     justify-content: center; /* Aligner horizontalement */
     align-items: flex-start; /* Aligner verticalement en haut */
 }
-.logo{
+.logo {
     display: flex;
     justify-content: center;
-    align-items: center; /* Aligner verticalement en haut */
+    margin-top: 170px; /* Ajustez la marge supérieure selon vos besoins */
+    filter: drop-shadow(30px 10px 4px #262627);
 }
+
+
+/* #### MILIEU #### */
+.milieu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(images/fond-milieu.jpg);
+    height: 1000px;
+    background-color: #4374ac;
+    background-size: cover; /* Assurez-vous que le fond s'ajuste correctement */
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 900px;
+    border-radius: 20px;
+    width: 90%;
+
+    margin: 0 auto; /* Ajoutez cette règle pour centrer horizontalement */
+}
+
+
+
+/* #### BAS #### */

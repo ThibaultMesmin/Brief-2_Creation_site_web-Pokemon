@@ -159,11 +159,6 @@ nav a {
 /* ----------- Thibault ----------- */
 
 /* #### HAUT #### */
-.presentation{
-    width: 180px;
-    height: 180px;
-    background-color: rgb(82, 88, 88);
-}
 .haut{
     background-image: url(images/Pokemon-fond-ecran-wallpaper-hd-4k-7.jpg);
     background-size: cover; /* Assurez-vous que le fond s'ajuste correctement */
@@ -175,33 +170,72 @@ nav a {
 .logo {
     display: flex;
     justify-content: center;
-    margin-top: 170px; /* Ajustez la marge supérieure selon vos besoins */
+    margin-top: 170px;
     filter: drop-shadow(30px 10px 4px #262627);
 }
 
 
 /* #### MILIEU #### */
-.milieu{
+.milieu {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    background-image: url(images/fond-milieu.jpg);
-    height: 1000px;
-    background-color: #4374ac;
-    background-size: cover; /* Assurez-vous que le fond s'ajuste correctement */
-}
-.menu {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    background-image: url(images/fond-milieu.jpg);
+    height: 100vh; /* Utilisation de la hauteur de la fenêtre du navigateur */
+    background-color: #4374ac;
+    background-size: cover;
+}
+
+.menu {
     background-color: #fff;
-    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: auto; /* Utilisation de 80% de la hauteur de la section milei */
     border-radius: 20px;
     width: 90%;
-
     margin: 0 auto; /* Ajoutez cette règle pour centrer horizontalement */
+
 }
+
+.pokedex{
+    height: 400px;
+    width: 700px;
+    display: flex;
+    margin: 10px;
+    padding: 40px;
+    justify-content: center;
+    background-color: rgb(194, 44, 44);
+    border-radius: 20px;
+}
+
+.collection{
+    height: 400px;
+    width: 700px;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    justify-content: center;
+    background-color: rgb(44, 194, 124);
+    border-radius: 20px;
+}
+
+.histoire{
+    height: 400px;
+    width: 700px;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    justify-content: center;
+    background-color: rgb(185, 235, 4);
+    border-radius: 20px;
+}
+
+.image_pokedex{
+    max-width: 200px;
+}
+
 
 
 

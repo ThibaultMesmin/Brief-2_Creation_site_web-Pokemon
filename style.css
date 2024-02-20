@@ -1,7 +1,35 @@
-body{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    padding: 1em;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0;
+    border: solid 0.1em grey;
+    border-radius: 2em;
+}
+
+#logoNavBar {
+    max-width: 10em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 0 1em;
+    text-decoration: none;
+    color: grey;
 }
 
 .presentation{

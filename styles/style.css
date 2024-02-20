@@ -165,11 +165,11 @@ nav a {
 /* #### HAUT #### */
 .haut{
     background-image: url(../images/Pokemon-fond-ecran-wallpaper-hd-4k-7.jpg);
-    background-size: cover; /* Assurez-vous que le fond s'ajuste correctement */
+    background-size: cover;
     height: 28em;
     display: flex;
-    justify-content: center; /* Aligner horizontalement */
-    align-items: flex-start; /* Aligner verticalement en haut */
+    justify-content: center; 
+    align-items: flex-start; 
 }
 .logo {
     display: flex;
@@ -186,7 +186,7 @@ nav a {
     justify-content: center;
     align-items: center;
     background-image: url(../images/fond-milieu.jpg);
-    height: 100vh; /* Utilisation de la hauteur de la fenêtre du navigateur */
+    height: 100vh;
     background-color: #4374ac;
     background-size: cover;
 }
@@ -196,10 +196,10 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    height: auto; /* Utilisation de 80% de la hauteur de la section milei */
+    height: auto;
     border-radius: 20px;
     width: 90%;
-    margin: 0 auto; /* Ajoutez cette règle pour centrer horizontalement */
+    margin: 0 auto; 
 
 }
 
@@ -209,8 +209,11 @@ nav a {
     display: flex;
     margin: 10px;
     padding: 40px;
+    flex-direction: column;
     justify-content: center;
-    background-color: rgb(194, 44, 44);
+    align-items: center;
+    background-image: url(../images/rouge.avif);
+    background-size: cover;
     border-radius: 20px;
 }
 
@@ -220,8 +223,11 @@ nav a {
     display: flex;
     margin: 10px;
     padding: 20px;
+    flex-direction: column;
     justify-content: center;
-    background-color: rgb(44, 194, 124);
+    align-items: center;;
+    background-image: url(../images/vert.jpg);
+    background-size: cover;
     border-radius: 20px;
 }
 
@@ -231,13 +237,25 @@ nav a {
     display: flex;
     margin: 10px;
     padding: 20px;
+    flex-direction: column;
     justify-content: center;
-    background-color: rgb(185, 235, 4);
+    align-items: center;
+    background-image: url(../images/jaune.jpg);
+    background-size: cover;
     border-radius: 20px;
 }
 
-.image_pokedex{
+.texte-menu{
+    font-size: large;
+    color: #fff;
+}
+
+.image{
     max-width: 200px;
+}
+
+#image_pokedex{
+    max-width: 275px;
 }
 
 

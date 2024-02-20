@@ -1,0 +1,28 @@
+main {
+    height: 80vh;
+}
+
+#formContainer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2em;
+}
+
+#formContainer h1 {
+    display: flex;
+    align-items: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formInput {
+    height: 3em;
+}
+
+form textarea {
+    width: 60em;
+    height: 20em;
+}

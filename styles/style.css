@@ -261,4 +261,15 @@ nav a {
 
 
 
-/* #### BAS #### */
+/* #### FOOTER #### */
+
+.footer{
+    background-image: url(../images/Pokemon-fond-ecran-wallpaper-hd-4k-7.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 10em;
+}
+
+.reseau{
+    background-position: left;
+}

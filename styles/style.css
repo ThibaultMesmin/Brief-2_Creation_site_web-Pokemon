@@ -1,0 +1,246 @@
+/* #### * #### */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1em;
+}
+
+
+/* #### Header #### */
+#header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0;
+    border: solid 0.1em grey;
+    border-radius: 2em;
+}
+
+#logoNavBar {
+    max-width: 10em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 0 1em;
+    text-decoration: none;
+    color: grey;
+}
+
+#burger-menu, #menu {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    #logoNavBar {
+        max-width: 14em;
+        height: 5em;
+        display: block;
+        margin: auto;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    #burger-menu {
+        display: flex;
+        cursor: pointer;
+        height: 27px;
+        width: 27px;
+        margin: auto;
+        overflow: visible;
+        position: relative;
+        z-index: 2;
+    }
+
+    #burger-menu span,
+    #burger-menu span:before,
+    #burger-menu span:after {
+        background: grey;
+        display: block;
+        height: 2px;
+        opacity: 1;
+        position: absolute;
+        transition: 0.3s ease-in-out;
+    }
+
+    #burger-menu span:before,
+    #burger-menu span:after {
+        content: "";
+    }
+
+    #burger-menu span:before {
+        left: 0px;
+        top: -10px;
+        width: 27px;
+    }
+
+    #burger-menu span {
+        right: 0px;
+        top: 13px;
+        width: 27px;
+    }
+
+    #burger-menu span:after {
+        left: 0px;
+        top: 10px;
+        width: 27px;
+    }
+
+    #burger-menu.close span:before {
+        top: 0px;
+        transform: rotate(90deg);
+        width: 27px;
+    }
+
+    #burger-menu.close span {
+        transform: rotate(-45deg);
+        top: 13px;
+        width: 27px;
+    }
+
+    #burger-menu.close span:after {
+        top: 0px;
+        left: 0;
+        transform: rotate(90deg);
+        opacity: 0;
+        width: 0;
+    }
+
+    #menu {
+        display: flex;
+        z-index: 1;
+        min-width: 50%;
+        min-height: 60%;
+        position: fixed;
+        justify-content: center;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        text-align: center;
+        padding-top: 20px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 4em;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu.overlay {
+        padding-top: 2em;
+        visibility: visible;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.85);
+    }
+    #menu ul {
+        padding: 0;
+    }
+    #menu li {
+        list-style: none;
+    }
+    #menu a {
+        color: grey;
+        display: block;
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-decoration: none;
+    }
+}
+
+
+
+
+/* ----------- Thibault ----------- */
+
+/* #### HAUT #### */
+.haut{
+    background-image: url(../images/Pokemon-fond-ecran-wallpaper-hd-4k-7.jpg);
+    background-size: cover; /* Assurez-vous que le fond s'ajuste correctement */
+    height: 28em;
+    display: flex;
+    justify-content: center; /* Aligner horizontalement */
+    align-items: flex-start; /* Aligner verticalement en haut */
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 170px;
+    filter: drop-shadow(30px 10px 4px #262627);
+}
+
+
+/* #### MILIEU #### */
+.milieu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/fond-milieu.jpg);
+    height: 100vh; /* Utilisation de la hauteur de la fenêtre du navigateur */
+    background-color: #4374ac;
+    background-size: cover;
+}
+
+.menu {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: auto; /* Utilisation de 80% de la hauteur de la section milei */
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto; /* Ajoutez cette règle pour centrer horizontalement */
+
+}
+
+.pokedex{
+    height: 400px;
+    width: 700px;
+    display: flex;
+    margin: 10px;
+    padding: 40px;
+    justify-content: center;
+    background-color: rgb(194, 44, 44);
+    border-radius: 20px;
+}
+
+.collection{
+    height: 400px;
+    width: 700px;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    justify-content: center;
+    background-color: rgb(44, 194, 124);
+    border-radius: 20px;
+}
+
+.histoire{
+    height: 400px;
+    width: 700px;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    justify-content: center;
+    background-color: rgb(185, 235, 4);
+    border-radius: 20px;
+}
+
+.image_pokedex{
+    max-width: 200px;
+}
+
+
+
+
+/* #### BAS #### */

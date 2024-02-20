@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.presentation{
+    width: 180px;
+    height: 180px;
+    background-color: rgb(82, 88, 88);
+}
+.haut{
+    background-size: contain;
+    background: url(images/Pokemon-fond-ecran-wallpaper-hd-4k-7.jpg);
+    height: 28em;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

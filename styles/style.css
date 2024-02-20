@@ -185,7 +185,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(images/fond-milieu.jpg);
+    background-image: url(../images/fond-milieu.jpg);
     height: 100vh; /* Utilisation de la hauteur de la fenêtre du navigateur */
     background-color: #4374ac;
     background-size: cover;

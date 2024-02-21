@@ -54,3 +54,10 @@ setTimeout(() => {
         overlay.classList.toggle("overlay");
     });
 }, 2000);
+
+
+let button = document.querySelector('button');
+
+// button.onclick = () => {
+//     window.open('');
+//   };

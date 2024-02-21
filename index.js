@@ -55,6 +55,8 @@ setTimeout(() => {
 }, 2000);
 
 
+// Page Contact
+// récupère button, div popup et span avec icone pour closepopup
 let showPopup = document.querySelector(".showPopup");
 let popup = document.getElementById('popup');
 let closePopup = document.getElementById("closePopup");
@@ -99,21 +101,26 @@ let items = document.querySelectorAll('.slider .item');
         loadShow();
     }
     
+
+// ajout event, au clic la popup s'affiche et le formulaire se vide
 showPopup.addEventListener("click", function() {
     popup.style.display = "block";
     resetForm();
 })
 
+// ajout event sur icone X, au clic popup disparaît
 closePopup.addEventListener('click', function() {
     popup.style.display = "none";
 })
 
+// au clic n'importe où sur l'écran, la popup disparaît
 window.addEventListener('click', function(event) {
     if(event.target == popup){
         popup.style.display = "none";
     }
 })
 
+// function qui récupère le formulaire et le vide
 const resetForm = function() {
     document.getElementById('form').reset();
 }

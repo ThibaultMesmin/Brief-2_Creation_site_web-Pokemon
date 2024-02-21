@@ -15,7 +15,7 @@ let callApi = function(pokemon) {
 }
 
 function displayPokemon(data) {
-    for (let index = 0; index < 151; index++) {
+    for (let index = 0; index < 26; index++) {
         const element = data[index];
         // console.log(element);
 

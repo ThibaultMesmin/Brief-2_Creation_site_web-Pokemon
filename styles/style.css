@@ -199,6 +199,7 @@ nav a {
     padding: 10px;
     height: auto;
     border-radius: 20px;
+    border: 4mm ridge rgba(109, 109, 105, 0.6);
     width: 90%;
     margin: 0 auto; 
 
@@ -261,8 +262,9 @@ nav a {
     filter: drop-shadow(20px 7px 10px #202020);
 }
 
-
-
+h1{
+    font-size: xx-large;
+}
 
 /* #### FOOTER #### */
 
@@ -283,7 +285,9 @@ nav a {
 /* #### CAROUSEL #### */
 
 .carousel{
-    background-color: beige;
+    background-image: url(../images/fond_collection.jpg);
+    background-size: cover;
+    background-position: bottom;
     width: 160vh;
     margin: 0;
     display: flex;
@@ -310,7 +314,7 @@ nav a {
     color: #000000;
     background-color: transparent;
     border: none;
-    font-size: xxx-large;
+    font-size: 4em;
     font-family: monospace;
     font-weight: bold;
 }

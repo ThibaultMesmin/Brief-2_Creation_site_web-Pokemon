@@ -32,7 +32,17 @@ window.addEventListener('load', () => {
         "/images/collection_manga/2.jpg",
         "/images/collection_manga/3.jpg",
         "/images/collection_manga/4.jpg",
-        "/images/collection_manga/5.jpg"
+        "/images/collection_manga/5.jpg",
+        "/images/collection_manga/6.jpg",
+        "/images/collection_manga/7.jpg",
+        "/images/collection_manga/8.jpg",
+        "/images/collection_manga/9.jpg",
+        "/images/collection_manga/10.jpg",
+        "/images/collection_manga/11.jpg",
+        "/images/collection_manga/12.jpg",
+        "/images/collection_manga/13.jpg",
+        "/images/collection_manga/14.jpg",
+
     ];
     let next = document.getElementById('next');
     let prev = document.getElementById('prev');

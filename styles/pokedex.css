@@ -1,0 +1,29 @@
+.menuPokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+}
+
+.newDivPokedex {
+    margin: 0.5em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/rouge.avif);
+}
+
+.pokedexName {
+    font-size: 1.2em;
+}
+
+.pokedexName, .pokemonCategory {
+    color: white;
+}
+
+.pokemonImage {
+    width: 8em;
+    height: 8em;
+    display: flex;
+}

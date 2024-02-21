@@ -15,20 +15,30 @@ let callApi = function(pokemon) {
 }
 
 function displayPokemon(data) {
-    for (let index = 0; index < 10; index++) {
+    for (let index = 0; index < 151; index++) {
         const element = data[index];
+        // console.log(element);
 
-        let menu = document.querySelector('.menu');
+        let menu = document.querySelector('.menuPokedex');
         let newDiv = document.createElement('div');
         let pokemonName = document.createElement('p');
+        let category = document.createElement('p');
+
         pokemonName.textContent = element.name.fr;
         newDiv.appendChild(pokemonName);
-        pokemonName.classList.add('pokedex');
+
+        newDiv.classList.add('newDivPokedex');
+        pokemonName.classList.add('pokedexName');
         
         let pokemonImage = document.createElement('img');
         pokemonImage.src = element.sprites.regular;
         newDiv.appendChild(pokemonImage);
         pokemonImage.classList.add('pokemonImage');
+
+        category.textContent = element.category;
+        newDiv.appendChild(category);
+
+        category.classList.add('pokemonCategory');
         
         menu.appendChild(newDiv);
     }

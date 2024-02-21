@@ -186,7 +186,7 @@ nav a {
     justify-content: center;
     align-items: center;
     background-image: url(../images/fond-milieu.jpg);
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #4374ac;
     background-size: cover;
 }

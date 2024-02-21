@@ -19,16 +19,18 @@ function displayPokemon(data) {
         const element = data[index];
 
         let menu = document.querySelector('.menu');
+        let newDiv = document.createElement('div');
         let pokemonName = document.createElement('p');
         pokemonName.textContent = element.name.fr;
-        menu.appendChild(pokemonName);
+        newDiv.appendChild(pokemonName);
         pokemonName.classList.add('pokedex');
-
+        
         let pokemonImage = document.createElement('img');
         pokemonImage.src = element.sprites.regular;
-        menu.appendChild(pokemonImage);
+        newDiv.appendChild(pokemonImage);
         pokemonImage.classList.add('pokemonImage');
         
+        menu.appendChild(newDiv);
     }
     // let element = data[0];
     // console.log('element index 0 : ', element);

@@ -1,4 +1,13 @@
 /* #### * #### */
+@font-face {
+    font-family: 'Cartoonist Hand';
+    src: url(../fonts/SF_Cartoonist_Hand_SC-webfont.woff);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Light-webfont.woff);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +16,13 @@
 
 body {
     padding: 1em;
+    font-family: 'Roboto', sans-serif;
 }
+
+nav, h1, #menu {
+    font-family: 'Cartoonist Hand', sans-serif;
+}
+
 
 
 /* #### Header #### */

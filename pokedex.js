@@ -1,4 +1,5 @@
-// essai API
+
+// appel API Tyradex
 let callApi = function(pokemon) {
     let url = `https://tyradex.tech/api/v1/gen/1`;
 
@@ -14,16 +15,31 @@ let callApi = function(pokemon) {
 }
 
 function displayPokemon(data) {
-    // console.log(data);
-    console.log(data);
-    // console.log(data.pokedexId[1]);
-    for (let index = 0; index < data.length; index++) {
-        let element = data[index].name;
-        console.log(element);
-        // let pokemonName = document.querySelector('#pokemonName');
-        // pokemonName.textContent = element.name;
-        // console.log(pokemonName);
+    for (let index = 0; index < 10; index++) {
+        const element = data[index];
+
+        let menu = document.querySelector('.menu');
+        let pokemonName = document.createElement('p');
+        pokemonName.textContent = element.name.fr;
+        menu.appendChild(pokemonName);
+        pokemonName.classList.add('pokedex');
+
+        let pokemonImage = document.createElement('img');
+        pokemonImage.src = element.sprites.regular;
+        menu.appendChild(pokemonImage);
+        pokemonImage.classList.add('pokemonImage');
+        
     }
+    // let element = data[0];
+    // console.log('element index 0 : ', element);
+    // let pokemonName = document.querySelector('#pokemonName');
+    // pokemonName.textContent = element.name.fr;
+
+    // let div = document.querySelector('.pokedex');
+    // let pokemonImage = document.createElement('img');
+    // pokemonImage.src = element.sprites.regular;
+    // div.appendChild(pokemonImage);
+    // pokemonImage.classList.add('pokemonImage');
 }
 
 callApi();

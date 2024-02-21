@@ -92,9 +92,6 @@ let showPopup = document.querySelector(".showPopup");
 let popup = document.getElementById('popup');
 let closePopup = document.getElementById("closePopup");
 
-
-    
-
 // ajout event, au clic la popup s'affiche et le formulaire se vide
 showPopup.addEventListener("click", function() {
     popup.style.display = "block";
@@ -117,3 +114,4 @@ window.addEventListener('click', function(event) {
 const resetForm = function() {
     document.getElementById('form').reset();
 }
+

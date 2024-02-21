@@ -195,6 +195,7 @@ nav a {
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 10px;
     height: auto;
     border-radius: 20px;
@@ -283,47 +284,33 @@ nav a {
 
 .carousel{
     background-color: beige;
-    min-height: 100vh;
     width: 160vh;
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: monospace;
 }
 .slider{
+    display: flex;
+    justify-content: space-evenly;
     position: relative;
     width: 100%;
-    height: 900px;
     overflow: hidden;
 }
 .item{
-    position: absolute;
     display: flex;
     justify-content: center;
-    height: 800px;
     text-align: justify;
     border-radius: 10px;
     padding: 20px;
-    transition: 0.5s;
-    left: calc(50% - 110px);
-    top: 0;
 }
 .images{
     max-height: 800px;
 }
 #next, #prev{
-    position: absolute;
-    top: 40%;
-    color: #fff;
+    color: #000000;
     background-color: transparent;
     border: none;
     font-size: xxx-large;
     font-family: monospace;
     font-weight: bold;
-    left: 200px;
-}
-#next{
-    left: unset;
-    right: 200px;
 }

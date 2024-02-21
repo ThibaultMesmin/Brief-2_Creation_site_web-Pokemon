@@ -175,9 +175,14 @@ nav a {
     display: flex;
     justify-content: center;
     margin-top: 170px;
-    filter: drop-shadow(30px 10px 4px #262627);
+    filter: drop-shadow(20px 10px 4px #262627);
 }
-
+@media screen and (max-width: 823px) {
+    .logo > img{
+        height: unset;
+        width: 100%;
+    }
+}
 
 /* #### MILIEU #### */
 .milieu {
@@ -206,20 +211,19 @@ nav a {
 }
 
 .pokedex{
-    height: 400px;
-    width: 700px;
-    display: flex;
-    margin: 10px;
-    padding: 40px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-image: url(../images/rouge.avif);
-    background-size: cover;
-    border-radius: 20px;
 }
 
-.collection{
+.collection {
+    background-image: url(../images/vert.jpg);
+}
+
+.histoire{
+    background-image: url(../images/jaune.jpg);
+}
+
+
+.pokedex, .collection, .histoire {
     height: 400px;
     width: 700px;
     display: flex;
@@ -228,21 +232,6 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;;
-    background-image: url(../images/vert.jpg);
-    background-size: cover;
-    border-radius: 20px;
-}
-
-.histoire{
-    height: 400px;
-    width: 700px;
-    display: flex;
-    margin: 10px;
-    padding: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/jaune.jpg);
     background-size: cover;
     border-radius: 20px;
 }
@@ -254,11 +243,6 @@ nav a {
 
 .image{
     max-width: 200px;
-    filter: drop-shadow(20px 7px 10px #202020);
-}
-
-#image_pokedex{
-    max-width: 275px;
     filter: drop-shadow(20px 7px 10px #202020);
 }
 
@@ -307,8 +291,14 @@ h1{
     border-radius: 10px;
     padding: 20px;
 }
-.images{
-    max-height: 800px;
+.item > img {
+    height: 800px;
+}
+@media screen and (max-width: 823px) {
+    .item > img{
+        height: unset;
+        width: 100%;
+    }
 }
 #next, #prev{
     color: #000000;

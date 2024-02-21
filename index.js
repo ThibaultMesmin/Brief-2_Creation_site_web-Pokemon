@@ -51,8 +51,7 @@ window.addEventListener('load', () => {
     function loadShow(){
         let img = document.createElement("img")
         img.src = items[active]
-        itemEl.firstChild.remove()
-        itemEl.append(img)
+        itemEl.innerHTML = img.outerHTML
     }
 
     loadShow();

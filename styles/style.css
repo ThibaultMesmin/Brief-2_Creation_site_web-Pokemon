@@ -252,10 +252,12 @@ nav a {
 
 .image{
     max-width: 200px;
+    filter: drop-shadow(20px 7px 10px #202020);
 }
 
 #image_pokedex{
     max-width: 275px;
+    filter: drop-shadow(20px 7px 10px #202020);
 }
 
 
@@ -272,4 +274,7 @@ nav a {
 
 .reseau{
     background-position: left;
+    color: #fff;
+    font-size: 80px;
+    padding: 35px;
 }

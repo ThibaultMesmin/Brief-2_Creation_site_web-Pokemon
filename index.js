@@ -40,8 +40,6 @@ window.addEventListener('load', () => {
     </section>`;
 });
 
-// Reste du code...
-
 // setTimeOut pour que mon code puisse être lu après le chargement de la page
 setTimeout(() => {
     // récupère les éléments injectés du DOM
@@ -57,11 +55,10 @@ setTimeout(() => {
 }, 2000);
 
 
-let button = document.querySelector('button');
+let showPopup = document.querySelector(".showPopup");
+let popup = document.getElementById('popup');
+let closePopup = document.getElementById("closePopup");
 
-// button.onclick = () => {
-//     window.open('');
-//   };
 
 // ####### CAROUSEL ########
 
@@ -101,3 +98,22 @@ let items = document.querySelectorAll('.slider .item');
         active = active - 1 >= 0 ? active - 1 : active;
         loadShow();
     }
+    
+showPopup.addEventListener("click", function() {
+    popup.style.display = "block";
+    resetForm();
+})
+
+closePopup.addEventListener('click', function() {
+    popup.style.display = "none";
+})
+
+window.addEventListener('click', function(event) {
+    if(event.target == popup){
+        popup.style.display = "none";
+    }
+})
+
+const resetForm = function() {
+    document.getElementById('form').reset();
+}

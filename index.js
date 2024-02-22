@@ -42,12 +42,13 @@ window.addEventListener('load', () => {
         "/images/collection_manga/12.jpg",
         "/images/collection_manga/13.jpg",
         "/images/collection_manga/14.jpg",
-
     ];
+
     let next = document.getElementById('next');
     let prev = document.getElementById('prev');
     const itemEl = document.querySelector('.item')
     let active = 0;
+
     function loadShow(){
         let img = document.createElement("img")
         img.src = items[active]
@@ -59,6 +60,7 @@ window.addEventListener('load', () => {
         active = active + 1 < items.length ? active + 1 : active;
         loadShow();
     }
+    
     prev.onclick = function(){
         active = active - 1 >= 0 ? active - 1 : active;
         loadShow();

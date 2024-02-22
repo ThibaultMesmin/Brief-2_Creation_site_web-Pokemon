@@ -81,6 +81,11 @@ window.addEventListener('load', () => {
     </section>`;
 });
 
+window.addEventListener('load', () => {
+    document.querySelector('.haut').innerHTML += `
+    <div class="logo"> <img src="/images/cropped-logo-400.webp" alt="logo"></div>`;
+})
+
 // setTimeOut pour que mon code puisse être lu après le chargement de la page
 setTimeout(() => {
     // récupère les éléments injectés du DOM

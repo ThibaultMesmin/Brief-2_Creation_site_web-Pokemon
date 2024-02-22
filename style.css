@@ -2,12 +2,12 @@
 /* ------- Fonts ------- */
 @font-face {
     font-family: 'Cartoonist Hand';
-    src: url(../fonts/SF_Cartoonist_Hand_SC-webfont.woff);
+    src: url(SF_Cartoonist_Hand_SC-webfont.woff);
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url(../fonts/Roboto-Light-webfont.woff);
+    src: url(Roboto-Light-webfont.woff);
 }
 
 
@@ -183,7 +183,7 @@ nav a {
 
 /* ------- Section haut ------- */
 .haut {
-    background-image: url(../images/Pokemon-fond-ecran-wallpaper-hd-4k-7.jpg);
+    background-image: url(Pokemon-fond-ecran-wallpaper-hd-4k-7.jpg);
     background-size: cover;
     height: 28em;
     display: flex;
@@ -236,7 +236,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/fond-milieu.jpg);
+    background-image: url(fond-milieu.jpg);
     background-color: #4374ac;
     background-size: cover;
 }
@@ -261,15 +261,15 @@ nav a {
 }
 
 .pokedex {
-    background-image: url(../images/rouge.avif);
+    background-image: url(rouge.avif);
 }
 
 .collection {
-    background-image: url(../images/vert.jpg);
+    background-image: url(vert.jpg);
 }
 
 .histoire {
-    background-image: url(../images/jaune.jpg);
+    background-image: url(jaune.jpg);
 }
 
 .pokedex, .collection, .histoire {
@@ -303,7 +303,7 @@ h1 {
 
 /* ------- Footer ------- */
 .footer {
-    background-image: url(../images/Pokemon-fond-ecran-wallpaper-hd-4k-7.jpg);
+    background-image: url(Pokemon-fond-ecran-wallpaper-hd-4k-7.jpg);
     background-size: cover;
     background-position: bottom;
 }

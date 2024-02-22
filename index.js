@@ -2,13 +2,13 @@
 // évènement ajouté au chargement de la page avec ajout direct d'html dans le DOM (navbar + menu burger sur toutes les pages)
 window.addEventListener('load', () => {
     document.querySelector('header').innerHTML += `
-        <img src="images/logo-pokemon2.png" alt="logo-pokemon" id="logoNavBar">
+        <img src="logo-pokemon2.png" alt="logo-pokemon" id="logoNavBar">
         <nav>
             <a href="index.html">Accueil</a>
-            <a href="pages/histoire.html">Histoire</a>
-            <a href="pages/pokedex.html">Pokedex</a>
-            <a href="pages/collections.html">Collections</a>
-            <a href="pages/contact.html">Contact</a>
+            <a href="histoire.html">Histoire</a>
+            <a href="pokedex.html">Pokedex</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact</a>
         </nav>
 
         <div id="burger-menu">
@@ -18,30 +18,30 @@ window.addEventListener('load', () => {
         <div id="menu">
             <ul>
               <li><a href="index.html">Accueil</a></li>
-              <li><a href="pages/histoire.html">Histoire</a></li>
-              <li><a href="pages/pokedex.html">Pokedex</a></li>
-              <li><a href="pages/collections.html">Collections</a></li>
-              <li><a href="pages/contact.html">Contact</a></li>
+              <li><a href="histoire.html">Histoire</a></li>
+              <li><a href="pokedex.html">Pokedex</a></li>
+              <li><a href="collections.html">Collections</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>`
         
     // toujours dans l'évènement de chargement de page, ajout du carousel dans la page collections.html
 
     let items =[
-        "images/collection_manga/1.jpg", 
-        "images/collection_manga/2.jpg",
-        "images/collection_manga/3.jpg",
-        "images/collection_manga/4.jpg",
-        "images/collection_manga/5.jpg",
-        "images/collection_manga/6.jpg",
-        "images/collection_manga/7.jpg",
-        "images/collection_manga/8.jpg",
-        "images/collection_manga/9.jpg",
-        "images/collection_manga/10.jpg",
-        "images/collection_manga/11.jpg",
-        "images/collection_manga/12.jpg",
-        "images/collection_manga/13.jpg",
-        "images/collection_manga/14.jpg",
+        "collection_manga/1.jpg", 
+        "collection_manga/2.jpg",
+        "collection_manga/3.jpg",
+        "collection_manga/4.jpg",
+        "collection_manga/5.jpg",
+        "collection_manga/6.jpg",
+        "collection_manga/7.jpg",
+        "collection_manga/8.jpg",
+        "collection_manga/9.jpg",
+        "collection_manga/10.jpg",
+        "collection_manga/11.jpg",
+        "collection_manga/12.jpg",
+        "collection_manga/13.jpg",
+        "collection_manga/14.jpg",
     ];
 
     let next = document.getElementById('next');
@@ -85,7 +85,7 @@ window.addEventListener('load', () => {
 // au chargement de la page, ajout d'image dans la première section de chaque page
 window.addEventListener('load', () => {
     document.querySelector('.haut').innerHTML += `
-    <div class="logo"> <img src="/images/cropped-logo-400.webp" alt="logo"></div>`;
+    <div class="logo"> <img src="cropped-logo-400.webp" alt="logo"></div>`;
 })
 
 // setTimeOut pour que mon code puisse être lu après le chargement de la page

@@ -1,7 +1,7 @@
 /* #### CAROUSEL #### */
 
 .carousel {
-    background-image: url(../images/fond_collection.jpg);
+    background-image: url(fond_collection.jpg);
     background-size: cover;
     background-position: bottom;
     width: 160vh;

@@ -1,8 +1,10 @@
-#pokemon_histoire{
+#pokemon_histoire {
     filter: drop-shadow(20px 7px 10px #202020);
 }
 
-
+.histoire_image {
+    margin: 2em 0;
+}
 
   /* ------- Media Queries ------- */
 

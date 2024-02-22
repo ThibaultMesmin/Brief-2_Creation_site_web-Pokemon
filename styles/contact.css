@@ -27,6 +27,7 @@ main {
 #form {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .formInput {
@@ -35,7 +36,7 @@ main {
 }
 
 form textarea {
-    width: 40em;
+    max-width: 40em;
     height: 15em;
 }
 
@@ -95,7 +96,7 @@ form textarea {
   
   @media screen and (max-width: 1530px) {
     #form textarea {
-        width: 30em;
+        max-width: 30em;
     }
   }
 
@@ -107,16 +108,6 @@ form textarea {
     }
 
     #form textarea {
-        width: 30em;
-    }
-  }
-
-  @media screen and (max-width: 700px) {
-    /* main {
-        height: 110vh;
-    } */
-
-    #form textarea {
-        width: 25em;
+        max-width: 30em;
     }
   }

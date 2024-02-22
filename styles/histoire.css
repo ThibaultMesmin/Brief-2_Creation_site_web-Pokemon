@@ -1,0 +1,6 @@
+@media screen and (max-width: 823px) {
+    .histoire_image{
+        height: unset;
+        width: 100%;
+    }
+}

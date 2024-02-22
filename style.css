@@ -131,10 +131,8 @@ nav a {
         display: flex;
         z-index: 1;
         min-width: 50%;
-        min-height: 70%;
-        position: fixed;
+        position: absolute;
         justify-content: center;
-        height: 0;
         visibility: hidden;
         opacity: 0;
         text-align: center;

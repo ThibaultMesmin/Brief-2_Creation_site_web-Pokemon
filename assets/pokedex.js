@@ -1,6 +1,6 @@
 
 // appel API Tyradex
-let callApi = function(pokemon) {
+let callApi = function() {
     let url = `https://tyradex.tech/api/v1/gen/1`;
 
     fetch(url).then((response) =>
@@ -41,17 +41,50 @@ function displayPokemon(data) {
         category.classList.add('pokemonCategory');
         
         menu.appendChild(newDiv);
-    }
-    // let element = data[0];
-    // console.log('element index 0 : ', element);
-    // let pokemonName = document.querySelector('#pokemonName');
-    // pokemonName.textContent = element.name.fr;
 
-    // let div = document.querySelector('.pokedex');
-    // let pokemonImage = document.createElement('img');
-    // pokemonImage.src = element.sprites.regular;
-    // div.appendChild(pokemonImage);
-    // pokemonImage.classList.add('pokemonImage');
+    }
+
+    // let formPokedex = document.querySelector('#formPokedex');
+    // formPokedex.addEventListener("submit", e => e.preventDefault());
+
+    let inputSearch = document.querySelector('#inputSearch');
+    
+    inputSearch.addEventListener('input', (e) => {
+
+        let input = e.target.value.toLowerCase();
+        // console.log(input);
+    
+        // Filtrer les données pour trouver le Pokémon correspondant
+        const matchingPokemon = data.find((pokemon) => pokemon.name.fr.toLowerCase() === input);
+        console.log("matching pokemon", matchingPokemon);
+
+        // Si un pokemon correspondant est trouvé, affiche ses détails
+        if (matchingPokemon) {
+            // displayPokemon().style.display = 'none';
+            displaySinglePokemon(matchingPokemon);
+            // console.log("pokemon trouvé : ", displaySinglePokemon(matchingPokemon));
+        } else {
+            // Si aucun pokemon ne correspond
+            console.error("Aucun Pokémon trouvé pour l'input:", input);
+        }
+    });
+    
+    function displaySinglePokemon(pokemon) {
+    
+        let soloCard = document.createElement('div');
+        let soloPokemonName = document.createElement('p');
+        soloPokemonName.textContent = pokemon.name.fr;
+        soloCard.appendChild(soloPokemonName);
+        console.log(soloPokemonName);
+    
+        let soloPokemonImage = document.createElement('img');
+        soloPokemonImage.src = pokemon.sprites.regular;
+        soloCard.appendChild(soloPokemonImage);
+    
+        soloCard.classList.add('newDivPokedex');
+        soloPokemonName.classList.add('pokedexName');
+        soloPokemonImage.classList.add('pokemonImage');
+    }
 }
 
 callApi();

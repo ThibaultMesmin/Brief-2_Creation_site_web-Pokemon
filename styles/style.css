@@ -3,6 +3,7 @@
     font-family: 'Cartoonist Hand';
     src: url(../fonts/SF_Cartoonist_Hand_SC-webfont.woff);
 }
+
 @font-face {
     font-family: 'Roboto';
     src: url(../fonts/Roboto-Light-webfont.woff);
@@ -173,8 +174,6 @@ nav a {
 }
 
 
-
-
 /* ----------- Thibault ----------- */
 
 /* #### HAUT #### */
@@ -186,12 +185,14 @@ nav a {
     justify-content: center; 
     align-items: flex-start; 
 }
+
 .logo {
     display: flex;
     justify-content: center;
     margin-top: 170px;
     filter: drop-shadow(20px 10px 4px #262627);
 }
+
 @media screen and (max-width: 823px) {
     .logo > img{
         height: unset;
@@ -291,6 +292,7 @@ nav a {
 
 h1{
     font-size: xx-large;
+    margin: 1em;
 }
 
 /* #### FOOTER #### */

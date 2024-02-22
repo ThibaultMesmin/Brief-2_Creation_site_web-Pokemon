@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
 }
+
 .slider{
     display: flex;
     justify-content: space-evenly;
@@ -16,6 +17,7 @@
     width: 100%;
     overflow: hidden;
 }
+
 .item{
     display: flex;
     justify-content: center;
@@ -23,15 +25,18 @@
     border-radius: 10px;
     padding: 20px;
 }
+
 .item > img {
     height: 800px;
 }
+
 @media screen and (max-width: 823px) {
     .item > img{
         height: unset;
         width: 100%;
     }
 }
+
 #next, #prev{
     color: #000000;
     background-color: transparent;

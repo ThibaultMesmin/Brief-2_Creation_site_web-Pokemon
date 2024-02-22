@@ -23,7 +23,6 @@ window.addEventListener('load', () => {
               <li><a href="/pages/contact.html">Contact</a></li>
             </ul>
         </div>`
-
         
     // ####### CAROUSEL ########
 

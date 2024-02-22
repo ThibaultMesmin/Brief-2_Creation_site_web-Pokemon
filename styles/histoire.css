@@ -2,8 +2,12 @@
     filter: drop-shadow(20px 7px 10px #202020);
 }
 
+
+
+  /* ------- Media Queries ------- */
+
 @media screen and (max-width: 823px) {
-    .histoire_image{
+    .histoire_image {
         height: unset;
         width: 100%;
     }

@@ -2,6 +2,7 @@
 // évènement ajouté au chargement de la page avec ajout direct d'html dans le DOM (navbar + menu burger sur toutes les pages)
 window.addEventListener('load', () => {
     document.querySelector('header').innerHTML += `
+        <img src="/images/logo-pokemon2.png" alt="logo-pokemon" id="logoNavBar">
         <nav>
             <a href="/index.html">Accueil</a>
             <a href="/pages/histoire.html">Histoire</a>
@@ -24,7 +25,7 @@ window.addEventListener('load', () => {
             </ul>
         </div>`
         
-    // ####### CAROUSEL ########
+    // toujours dans l'évènement de chargement de page, ajout du carousel dans la page collections.html
 
     let items =[
         "/images/collection_manga/1.jpg", 
@@ -66,7 +67,7 @@ window.addEventListener('load', () => {
     }
 })
 
-// évènement ajouté au chargement de la page avec ajout direct d'html dans le DOM (footer logo réseaux sociaux)
+// évènement ajouté au chargement de la page avec ajout direct d'html dans le DOM (footer)
 window.addEventListener('load', () => {
     document.querySelector('footer').innerHTML += `
     <section class="footer">
@@ -81,6 +82,7 @@ window.addEventListener('load', () => {
     </section>`;
 });
 
+// au chargement de la page, ajout d'image dans la première section de chaque page
 window.addEventListener('load', () => {
     document.querySelector('.haut').innerHTML += `
     <div class="logo"> <img src="/images/cropped-logo-400.webp" alt="logo"></div>`;

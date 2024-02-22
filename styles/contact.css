@@ -94,6 +94,8 @@ form textarea {
     color: white;
   }
   
+  /* ------- Media Queries ------- */
+  
   @media screen and (max-width: 1530px) {
     #form textarea {
         max-width: 30em;

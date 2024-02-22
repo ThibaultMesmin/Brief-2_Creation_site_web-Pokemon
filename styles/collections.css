@@ -1,6 +1,6 @@
 /* #### CAROUSEL #### */
 
-.carousel{
+.carousel {
     background-image: url(../images/fond_collection.jpg);
     background-size: cover;
     background-position: bottom;
@@ -10,7 +10,7 @@
     justify-content: center;
 }
 
-.slider{
+.slider {
     display: flex;
     justify-content: space-evenly;
     position: relative;
@@ -19,7 +19,7 @@
     filter: drop-shadow(20px 7px 10px #202020);
 }
 
-.item{
+.item {
     display: flex;
     justify-content: center;
     text-align: justify;
@@ -31,18 +31,20 @@
     height: 800px;
 }
 
-@media screen and (max-width: 823px) {
-    .item > img{
-        height: unset;
-        width: 100%;
-    }
-}
-
-#next, #prev{
+#next, #prev {
     color: #000000;
     background-color: transparent;
     border: none;
     font-size: 4em;
     font-family: monospace;
     font-weight: bold;
+}
+
+
+/* ------- Media Queries ------- */
+@media screen and (max-width: 823px) {
+  .item > img {
+      height: unset;
+      width: 100%;
+  }
 }

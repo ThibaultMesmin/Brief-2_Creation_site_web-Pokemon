@@ -73,7 +73,8 @@ function addFormListener(data) {
         const {search} = Object.fromEntries(new FormData(e.target));
 
         // me permet de récupérer les données de l'input
-        let input = search.toLowerCase();
+        // retourne tout en miniscules et enlève les blancs en début et fin de string
+        let input = search.toLowerCase().trim();
     
         // filtre les données pour trouver le Pokémon correspondant aux données rentrées dans l'input
         const matchingPokemons = data.filter((pokemon) => pokemon.name.fr.toLowerCase().includes(input));

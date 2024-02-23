@@ -20,8 +20,11 @@ form.addEventListener('submit', function (event) {
     // Empêche le comportement par défaut de l'envoi du formulaire (rechargement de la page)
     event.preventDefault();
 
-    // appel cette fonction pour l'envoi asynchrone du formulaire
-    submitFormAsync();
+    // appel cette fonction pour valider les inputs du formulaire
+    if (validateForm()) {
+        // si la validation réussit, appelez la fonction pour l'envoi asynchrone du formulaire
+        submitFormAsync();
+    }
 });
 
 // fonction pour l'envoi asynchrone du formulaire
@@ -83,7 +86,7 @@ function validateForm() {
     }
 
     // validation de l'email (regex de vérification d'email)
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/;
     // .test permet de vérifier la correspondance entre les données de l'input email et celle du regex
     // .trim permet de retirer les blancs (espaces) en début et fin de string
     // ici, si l'email ne correspond pas au regex, renvoi une alert

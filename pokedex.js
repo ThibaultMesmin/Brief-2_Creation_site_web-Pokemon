@@ -25,7 +25,7 @@ function displayPokemon(data) {
     menu.innerHTML = '';
 
     // boucle for sur mes données de l'API pour afficher au chargement de la page un nombre en particulier de pokemon
-    for (let index = 0; index < 50; index++) {
+    for (let index = 0; index < 151; index++) {
         const element = data[index];
         // console.log(element);
 
@@ -73,7 +73,7 @@ function addFormListener(data) {
         const {search} = Object.fromEntries(new FormData(e.target));
 
         // me permet de récupérer les données de l'input
-        let input = search;
+        let input = search.toLowerCase();
     
         // filtre les données pour trouver le Pokémon correspondant aux données rentrées dans l'input
         const matchingPokemons = data.filter((pokemon) => pokemon.name.fr.toLowerCase().includes(input));
